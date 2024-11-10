@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Multimedia</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <!-- Encabezado con logo y menú responsivo -->
+    <header>
+        <div class="logo">Multimedia</div>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#music">Música</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#images">Imágenes</a></li>
+                <li><a href="#text">Texto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Sección de Música -->
+    <section id="music" class="content-section">
+        <h2>Música</h2>
+        <audio controls>
+            <source src="Multimedia/Audio/Audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section id="videos" class="content-section">
+        <h2>Videos</h2>
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="Multimedia/Videos/Video 1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video controls width="100%">
+                <source src="Multimedia/Videos/Video 2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video controls width="100%">
+                <source src="Multimedia/Videos/Video 3.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </section>
+
+    <!-- Sección de Imágenes -->
+    <section id="images" class="content-section">
+        <h2>Imágenes</h2>
+        <div class="image-container">
+            <img src="Multimedia/Imagenes/Imagen 1.jpg" alt="Imagen 1" class="responsive-img">
+            <img src="Multimedia/Imagenes/Imagen 2.jpg" alt="Imagen 2" class="responsive-img">
+            <img src="Multimedia/Imagenes/Imagen 3.jpg" alt="Imagen 3" class="responsive-img">
+            <img src="Multimedia/Imagenes/Imagen 4.jpg" alt="Imagen 4" class="responsive-img">
+            <img src="Multimedia/Imagenes/Imagen 5.jpg" alt="Imagen 5" class="responsive-img">
+        </div>
+    </section>
+
+    
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

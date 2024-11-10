@@ -1,0 +1,109 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5em;
+}
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+.content-section {
+    padding: 2em;
+}
+.video-container, .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+.video-container video, .responsive-img {
+    width: 100%;
+    max-width: 480px;
+}
+.image-container img {
+    border-radius: 8px;
+}
+
+/* Estilos para escritorio */
+@media (min-width: 1024px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        padding: 1em;
+    }
+    nav ul.menu li {
+        margin-bottom: 1em;
+    }
+    nav ul.menu.show {
+        display: flex;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 1em;
+    }
+    nav ul.menu li {
+        margin-bottom: 1em;
+    }
+    nav ul.menu.show {
+        display: flex;
+    }
+    .video-container video, .image-container img {
+        max-width: 100%;
+    }
+}
